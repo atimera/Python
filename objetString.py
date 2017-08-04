@@ -1,20 +1,21 @@
+# -*-coding:utf-8 -* 
 # -*-coding:Latin-1 -*
 
 # help(str) for more infos
 def quitter():
-    #crÈe une chaine vide | comme int() crÈe un entier null:0
+    #cr√©e une chaine vide | comme int() cr√©e un entier null:0
     chaine = str()
     while chaine.lower() != "q":
         print("taper 'Q' pour quitter ")
         chaine = input()
     print("Merci !")
 
-chaine = "hamza mallÈ timere"
+chaine = "hamza mall√© timere"
 print(chaine.capitalize())
 print(chaine.strip().center(20))
 print(len(chaine))
 
-# formter un string 1Ëre syntaxe de format()
+# formter un string 1√®re syntaxe de format()
 nom = "timera"
 prenom = "hamza"
 age = 26
@@ -22,7 +23,7 @@ date = "31 novembre 1990"
 heure = "17h00"
 print("je m'appelle {0} {1}, j'ai {2} ans."\
       .format(prenom.capitalize(), nom.upper(), age))
-print("je suis nÈ un {} {} ‡ {} .".format("vendredi",date,heure))
+print("je suis n√© un {} {} √† {} .".format("vendredi",date,heure))
 
 # seconde syntaxe de format()
 adresse = """
@@ -31,3 +32,13 @@ adresse = """
 """.format(num_rue = 15, nom_rue = "avenue auguste renoir",\
            code_postal = 77680, ville = "roissy-en-brie")
 print(adresse)
+
+# concatenation de chaine
+prix = 15
+print(" ce mobilier co√ªte " + str(prix) +"‚Ç¨.")
+
+chaine = "salut"
+i = 0
+while i<len(chaine):
+    print(chaine[i])
+    i += 1
