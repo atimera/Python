@@ -30,3 +30,12 @@ dic["chien"]()
 dic["enfant"]()
 dic["chat"]()
 
+# les methodes de parcours
+
+for cle in dic.keys():
+    print(cle)
+for valeur in dic.values():
+    print(valeur)
+    valeur()
+for cle, valeur in dic.items():
+    print((cle, valeur))
