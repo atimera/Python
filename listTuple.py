@@ -87,3 +87,53 @@ print(*liste) # == print(9,8,7,4,5,62,1) c'est la meme chose
 
 # Compréhension de liste
 
+ma_list = [1,5,10,19,"hello", 98, "bonjour tout le monde", (7,5), (8,9,3), [89, 21]]
+liste = [0,2,5,8,12,16]
+carre = [nb * nb for nb in liste]
+carre2 = [nb * nb for nb in ma_list if type(nb) is int]
+paires = [nb1 for nb1 in carre if nb1 % 2 == 0] # les paire dans carre
+print(carre,carre2,paires)
+
+inventaire = [
+        ("pommes", 53),
+        ("oranges", 26),
+        ("pamplemousses", 62),
+        ("mangues", 31),
+        ("melons", 10),
+        ("fraises", 8),
+        ("poires", 16),
+        ("prunes", 25)
+    ]
+print(inventaire)
+#apres une semaine -25 sur chaque fruit, cmb il reste
+new_inventaire = [(nb-25, elt) for (elt, nb) in inventaire if nb-25 > 0]
+print("nouveau inventaire : {}".format(sorted(new_inventaire))) # tri ordre croissant
+                                            # reverse = True si ordre decroissant
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
