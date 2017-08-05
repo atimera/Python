@@ -18,6 +18,7 @@ print("index of 'hello' : {} ".format(ma_list.index("hello")))
 ma_list2 = ["coucou", math.pi, math.sqrt(55), ('x','y')]
 
 ma_list.extend(ma_list2)
+<<<<<<< HEAD
 del(ma_list2) #delete variable
 
 liste = ["je", "hamza", "timera"]
@@ -135,5 +136,13 @@ print("nouveau inventaire : {}".format(sorted(new_inventaire))) # tri ordre croi
 
 
 
+=======
+del(ma_list2)) #delete variable
+
+ma_list.reverse()
+
+print(ma_list)
+
+>>>>>>> listTuple
 
 
