@@ -39,3 +39,23 @@ for valeur in dic.values():
     valeur()
 for cle, valeur in dic.items():
     print((cle, valeur))
+
+
+# dictionnaire et parametre de fonctions
+
+def parametre_nom(*liste, **nomme):
+    print("parametres nommés : {}\n".format(nomme))
+    print("liste de parametre : {}\n".format(liste))
+
+liste = [1,2,3,5,"e","o"]
+parametre_nom(liste, x="7", y=8)
+
+#transformer un dictionnaire en parametre de fonctions
+parametre = {"sep": " >> ", "end": " -fin\n"}
+print(0,1,2,3,4,5,6,7,8,9,**parametre)
+
+
+
+
+
+    
