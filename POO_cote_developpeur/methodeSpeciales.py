@@ -66,7 +66,17 @@ delattr(objet, "nom") # = del objet.nom ou objet.__delattr__("nom")
 hasattr(objet, "nom") # Renvoie True si l'attribut "nom" existe, False sinon
 """
 
+# Les méthodes spéciales pour les Conteneur (list, str, dict, tuple...)
+"""
+__getitem__(self) : definie quoi faire quand on fait objet[index]
+__setitem__(self) : definie quoi faire quand on fait objet[index] = valeur
+__delitem__(self, index) : definie quoi faire quand on fait del(objet[index])
+__contains__(self, elt) : est appelé quand on fait: (elt in conteneur) return True ou False
+__len__(): pour donner la taille du conteneur quand on fait len(conteneur), objet.__len__() est appelé
 
+__repr__, __str__ : sont aussi valable pr les conteneurs
+
+"""
 
 
 
