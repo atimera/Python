@@ -90,6 +90,8 @@ class ZDict:
         """Cette méthode est appelée quand on écrit objet[index] = valeur
         On redirige vers self._dictionnaire[index] = valeur"""
         self._dictionnaire[index] = valeur
+    
+        
 
 
 
